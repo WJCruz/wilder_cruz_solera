@@ -1,0 +1,20 @@
+import app  from "./app";
+import { PORT } from "./config";
+import { AppDataSource } from "./db";
+
+async function main() {
+  try {
+    await AppDataSource.initialize();
+    console.log('Connected to MySQL')
+    app.listen (PORT, () => {
+      console.log("Running on port: ", PORT)
+    }); 
+    
+  }
+  catch (error) {
+    console.error(error)
+    throw new Error("Unable to connect to db")
+  }
+}
+
+main();
