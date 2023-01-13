@@ -13,6 +13,7 @@ You can run the code locally using npm.
 ```sh
 git clone https://github.com/WJCruz/wilder_cruz_solera.git
 cd wilder_cruz_solera
+npm install
 npm run dev
 ```
 Then, using the postman collection in the repository (solera.postman_collection.json) you can do the necessary tests as detailed below: 
