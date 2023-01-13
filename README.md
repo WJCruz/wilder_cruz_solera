@@ -15,7 +15,7 @@ git clone https://github.com/WJCruz/wilder_cruz_solera.git
 cd wilder_cruz_solera
 npm run dev
 ```
-Then, using the postman collection in the repository you can do the necessary tests as detailed below: 
+Then, using the postman collection in the repository (solera.postman_collection.json) you can do the necessary tests as detailed below: 
 
 `http://localhost:3000/api/users` using the url in the GET method we get the list of all users.
 
